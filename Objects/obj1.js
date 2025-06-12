@@ -7,3 +7,12 @@ let car = {
 // console.log(car)
 console.log(car.brand)
 console.log(car.model)
+
+// destructuring object
+
+let {brand, ...rest} = car;
+
+console.log(brand);
+
+// structuring object
+let newCar = {brand, ...rest}; /* Cannot redeclare object */
